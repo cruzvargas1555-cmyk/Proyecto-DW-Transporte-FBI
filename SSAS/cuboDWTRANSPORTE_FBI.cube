@@ -1,0 +1,464 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="76c3ccb2-8abe-4d0b-b320-2daf53675ab3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>cuboDWTRANSPORTE_FBI</ID>
+  <Name>cuboDWTRANSPORTE_FBI</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="35aa01e1-fc5e-48af-8eec-4e74c60881b1">
+      <ID>Horario</ID>
+      <Name>Horario</Name>
+      <DimensionID>Horario</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="13e81d85-efd5-416a-858b-efb98f899c59">
+          <AttributeID>Pk Horario</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c30e644c-c969-454b-8769-db554f09ffab">
+          <AttributeID>Turno</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="54e085f5-ad2f-47d7-ae03-0c0f5d827006">
+      <ID>Cliente</ID>
+      <Name>Cliente</Name>
+      <DimensionID>Cliente</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0f12bea2-0297-46bd-a0eb-db4ea1049903">
+          <AttributeID>Pk Cliente</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a244603b-909c-4881-934b-491a89618fe8">
+          <AttributeID>Categoria</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5492c234-3482-4674-8caa-8698c09e1e7a">
+      <ID>Terminal</ID>
+      <Name>Terminal</Name>
+      <DimensionID>Terminal</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="56ff85b7-5748-4f2a-8e86-8e06c9156611">
+          <AttributeID>Pk Terminal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1dc48a7b-cf9c-4990-bd3f-8a42b5103308">
+          <AttributeID>Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ab9b023-2f7b-4cbb-85e4-0a51c4d791a9">
+          <AttributeID>Ciudad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="da8d9765-9b23-4b4f-84cc-64e28dcf5717">
+      <ID>Conductor</ID>
+      <Name>Conductor</Name>
+      <DimensionID>Conductor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ac987a64-dbc7-4d56-8274-65ee41149080">
+          <AttributeID>Pk Conductor</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ffd46ff3-081b-48fb-89b6-b42d37801ce8">
+          <AttributeID>Nombre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="778b6499-963c-4558-b5e6-db5a969b7339">
+          <AttributeID>Apellido</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="02b8ae5f-b890-4b94-80af-2430256b80d6">
+          <AttributeID>Licencia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41819340-7f3e-43b2-bed9-980cf536fead">
+          <AttributeID>Incidencia</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5175498b-dbf7-49cd-ac88-47183e6c5053">
+      <ID>Ruta</ID>
+      <Name>Ruta</Name>
+      <DimensionID>Ruta</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6abdfea4-80ba-4fdd-9771-8ac9bbf7f761">
+          <AttributeID>Pk Ruta</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="548dbae8-43ed-4c61-bd33-61398fed0e83">
+          <AttributeID>Origen</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="69ad8f3c-05b3-412e-b1e9-0384c76213a5">
+          <AttributeID>Destino</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c2eb3981-ac4e-477e-8789-7345a66180cf">
+          <AttributeID>Precio Pasaje</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a66bfe62-db94-43aa-b993-ff4d846d38ad">
+      <ID>Mantenimiento</ID>
+      <Name>Mantenimiento</Name>
+      <DimensionID>Mantenimiento</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7a5dca2b-9fbd-455e-b370-ca28e7c88552">
+          <AttributeID>Pk Mantenimiento</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b0004397-4997-4019-a764-58c0347c6180">
+          <AttributeID>Fecha</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3bdd9ae2-6d9b-4933-8882-64bee5d3a6e9">
+          <AttributeID>Tipo Mantenimiento</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e9873cba-5eec-49f8-a111-55423ce45e70">
+      <ID>Tiempo</ID>
+      <Name>Tiempo</Name>
+      <DimensionID>Tiempo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a5b459b0-cd4c-49d7-b106-77bf9b0bf349">
+          <AttributeID>Pk Tiempo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24b13465-2f6b-4fe4-b723-fba4e35ad55a">
+          <AttributeID>Anio</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5084ded5-d487-4470-9735-7b934c83b739">
+          <AttributeID>Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c044aafa-323d-4526-966c-123b759dfb72">
+          <AttributeID>Semana</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2afa776b-2d31-496c-bbc7-22f83124c64c">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="46e214b0-1b32-418d-a359-04ad702c723b">
+          <AttributeID>Fecha</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="73140ffe-48a9-41bb-b1d3-b32aa9c703a5">
+      <ID>Bus</ID>
+      <Name>Bus</Name>
+      <DimensionID>Bus</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9a886b2e-e1f5-4012-b056-dca178667de3">
+          <AttributeID>Pk Bus</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce4ae2d5-46c2-4d86-b3ef-5caecd0697a7">
+          <AttributeID>Placa</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f0dcf29b-4a4d-406d-ad76-e81663607899">
+          <AttributeID>Modelo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87e9d368-ec91-4861-8d72-ff3fffdddb77">
+          <AttributeID>Capacidad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="6f5061a9-3748-40d0-9b5f-ac704d756944">
+      <ID>Boleto</ID>
+      <Name>Boleto</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e8a12b0d-851c-42f1-825e-ce8323654209">
+          <ID>Ingresos</ID>
+          <Name>Ingresos</Name>
+          <Source dwd:design-time-name="9304aad2-44e1-4a15-9a0f-a81e959c37a5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8e4b345a-58e8-4db2-a7cb-418976a3e0be">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>Ingresos</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b9ac3cad-0699-4975-a969-920a052bb31c">
+          <ID>Cantidad Viaje</ID>
+          <Name>Cantidad Viaje</Name>
+          <Source dwd:design-time-name="72848e6e-3e5e-4758-84cb-7bc585526cfa">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c1c5bca7-abdb-4863-84c0-73fe4a5ca110">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>CantidadViaje</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="dcb08bf2-fb69-4581-9ec8-042e8454a83f">
+          <ID>Cantidad Pasajero</ID>
+          <Name>Cantidad Pasajero</Name>
+          <Source dwd:design-time-name="4257d582-2f41-407c-809d-d48ab54c51a7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ad262240-fb22-43fb-b0aa-4705e7e549d8">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>CantidadPasajero</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4723598b-0616-43f6-9b8e-2ac6e12b1472">
+          <ID>Promedio Pasajero</ID>
+          <Name>Promedio Pasajero</Name>
+          <Source dwd:design-time-name="c51f93a1-6856-43af-b749-3e2544370b60">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="73104abb-c0b0-421b-9ef3-072827699226">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>PromedioPasajero</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f9175fcd-7618-4522-a4e0-5d22d8fdae72">
+          <ID>Venta Boleto</ID>
+          <Name>Venta Boleto</Name>
+          <Source dwd:design-time-name="960d4ea4-a780-4cf5-9922-319e7a8ba0c9">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="be4b8b1d-27ba-4fb3-bf86-22bfe0181b1d">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>VentaBoleto</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="43d963e7-e6f1-4661-ac8f-87c08009835f">
+          <ID>Retrasos</ID>
+          <Name>Retrasos</Name>
+          <Source dwd:design-time-name="0b5d2a83-1ecd-4ab9-adc5-c51b3b1e5c07">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="692a31fb-ba83-498d-b060-026aeb7b3b36">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>Retrasos</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="64aa7599-a7a6-4150-b4e1-fe04808b0359">
+          <ID>Monto Mantenimiento</ID>
+          <Name>Monto Mantenimiento</Name>
+          <Source dwd:design-time-name="fe0ffe4e-1d85-4389-b87b-2bc568012cd4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0974125c-9180-4324-a217-0ffeef908c89">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>MontoMantenimiento</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e0e0bed2-ee35-40dd-ad73-e8b89012de3c">
+          <ID>Combustible</ID>
+          <Name>Combustible</Name>
+          <Source dwd:design-time-name="e1448c64-d2cd-4905-86a4-483150afc664">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="af9dc7ff-81d6-4866-ab2e-69569ef2416c">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>Combustible</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9b11d998-5879-49c6-b84a-425e88ed6fbe">
+          <ID>Demanda</ID>
+          <Name>Demanda</Name>
+          <Source dwd:design-time-name="3ec15a8e-1fb0-4f3f-81ba-6ea35c07be2a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c0dce6b3-e5dd-4c19-a6e4-5f004b50c4c0">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>Demanda</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cd0cd101-6da3-4c8e-8314-266b95edf058">
+          <ID>Incidencias</ID>
+          <Name>Incidencias</Name>
+          <Source dwd:design-time-name="ed53c9b9-162f-4f92-8ab5-fb3e353eae6b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="94ed5a32-4480-41a7-bedf-a503d9ee7251">
+              <TableID>dbo_Boleto</TableID>
+              <ColumnID>Incidencias</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="35e50677-772a-472f-9289-fb5df7e1daf9">
+          <CubeDimensionID>Horario</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4e779364-f586-4a29-8dac-f168577aaa76">
+              <AttributeID>Pk Horario</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="306f4bd6-9bf8-4a55-8b83-c031791b964d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e8f2f601-8c7f-4977-8556-817aec498d3b">
+                    <TableID>dbo_Boleto</TableID>
+                    <ColumnID>pkHorario</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0085cef1-6548-44f5-be1e-210bc1d41c27">
+          <CubeDimensionID>Cliente</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ce65b73a-c107-4e5d-8a16-f2ed30714ef6">
+              <AttributeID>Pk Cliente</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dfb0f65e-ad3d-457c-bd9e-ddd8ad9b59c9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e006be20-950a-4754-9143-d9a9f98caa56">
+                    <TableID>dbo_Boleto</TableID>
+                    <ColumnID>pkCliente</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2763c83d-0723-4453-9125-6b225c1a07ff">
+          <CubeDimensionID>Terminal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="73dcd822-3b05-4f31-a72c-d25136fc2f38">
+              <AttributeID>Pk Terminal</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d6b2a7a4-44a8-4e51-8fd4-4b04ac12b049">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ff551058-ce8f-4c3f-8df1-d0970f3c9678">
+                    <TableID>dbo_Boleto</TableID>
+                    <ColumnID>pkTerminal</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="506547ca-8bfa-4fc5-b009-dbb68fe2ef1a">
+          <CubeDimensionID>Conductor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c1c05c13-f075-4991-8747-1e4c2c7e2058">
+              <AttributeID>Pk Conductor</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5adb69c8-f3a7-46e0-8972-4f25b0738a62">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="115cc1b2-414e-45c2-b8b4-010174aebf0a">
+                    <TableID>dbo_Boleto</TableID>
+                    <ColumnID>pkConductor</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ea444404-4f91-4058-a0f6-55fd5e01ba22">
+          <CubeDimensionID>Ruta</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f5fb1a58-669a-4d25-8784-1b3084d383d0">
+              <AttributeID>Pk Ruta</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5a6229c5-ce48-43d5-899e-90676b947472">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6715cb87-ebf4-41d1-86f8-210d4573bd49">
+                    <TableID>dbo_Boleto</TableID>
+                    <ColumnID>pkRuta</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="186c0cdb-a238-4ef5-9a88-ec40474c0346">
+          <CubeDimensionID>Mantenimiento</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="32894969-1880-4971-b7b6-4ad53aba2689">
+              <AttributeID>Pk Mantenimiento</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="207e3dd0-73bf-4484-bff3-4f7c231e9874">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1749591f-d3c4-4b8c-8d5b-27471d8c9689">
+                    <TableID>dbo_Boleto</TableID>
+                    <ColumnID>pkMantenimiento</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6424034a-9d09-4959-abf7-60b8e9b4ec4f">
+          <CubeDimensionID>Tiempo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="928a1d2f-acaa-42b8-99c4-1b4e35a489a9">
+              <AttributeID>Pk Tiempo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="02817a0b-2f5e-48a0-8b52-917e64f09af0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="452bd60c-fa54-4491-95a0-c186511ff871">
+                    <TableID>dbo_Boleto</TableID>
+                    <ColumnID>pkTiempo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="053220f1-d9a0-486d-8f2f-5601c2fb5cc3">
+          <CubeDimensionID>Bus</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5f5b024b-78da-48ea-bd8d-b8e27e5b81a0">
+              <AttributeID>Pk Bus</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="75e3807e-f487-40cf-be61-6ab4bcf8c150">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="537db7d8-de45-4cd6-8bcd-910bca7a7bbe">
+                    <TableID>dbo_Boleto</TableID>
+                    <ColumnID>pkBus</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="6af4c20b-6e0e-4532-b429-7674030c9ff7">
+    <DataSourceViewID>ViewDWTRANSPORTE_FBI</DataSourceViewID>
+  </Source>
+</Cube>

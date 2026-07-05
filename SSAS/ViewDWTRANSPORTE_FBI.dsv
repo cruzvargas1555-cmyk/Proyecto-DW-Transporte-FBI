@@ -1,0 +1,300 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b1ad3cb2-fbe1-4d24-8c86-6614ab53728c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ViewDWTRANSPORTE_FBI</ID>
+  <Name>ViewDWTRANSPORTE_FBI</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>dsDWTRANSPORTE_FBI</DataSourceID>
+  <Schema>
+    <xs:schema id="ViewDWTRANSPORTE_FBI" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="ViewDWTRANSPORTE_FBI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="c47ce697-2cb6-4865-a3e7-daf8442f5264">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Boleto" msprop:DbTableName="Boleto" msprop:FriendlyName="Boleto" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2d6ccc6f-2f89-4094-89e4-4d69d91f62f1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkCliente" msprop:FriendlyName="pkCliente" msprop:DbColumnName="pkCliente" msprop:design-time-name="08280863-61a8-40f2-86a6-d4662e971ef4" type="xs:int" />
+                  <xs:element name="pkRuta" msprop:FriendlyName="pkRuta" msprop:DbColumnName="pkRuta" msprop:design-time-name="13d38c9b-910f-448e-b7b3-942972ed4032" type="xs:int" />
+                  <xs:element name="pkTiempo" msprop:FriendlyName="pkTiempo" msprop:DbColumnName="pkTiempo" msprop:design-time-name="a6cd4489-045f-4582-b2b3-079f2dd31554" type="xs:int" />
+                  <xs:element name="pkHorario" msprop:FriendlyName="pkHorario" msprop:DbColumnName="pkHorario" msprop:design-time-name="d2efd043-f523-42f7-b4c2-319c99ede9be" type="xs:int" />
+                  <xs:element name="pkMantenimiento" msprop:FriendlyName="pkMantenimiento" msprop:DbColumnName="pkMantenimiento" msprop:design-time-name="b56ee5fa-112b-4ab9-878e-38b6e77674a6" type="xs:int" />
+                  <xs:element name="pkBus" msprop:FriendlyName="pkBus" msprop:DbColumnName="pkBus" msprop:design-time-name="8382395e-5928-40cf-9059-4ea6d9bc6a11" type="xs:int" />
+                  <xs:element name="pkConductor" msprop:FriendlyName="pkConductor" msprop:DbColumnName="pkConductor" msprop:design-time-name="fcda5d20-a874-4ee0-a535-3192ffb4f587" type="xs:int" />
+                  <xs:element name="pkTerminal" msprop:FriendlyName="pkTerminal" msprop:DbColumnName="pkTerminal" msprop:design-time-name="56c7e96f-90ff-4cb7-a76b-01549474de2c" type="xs:int" />
+                  <xs:element name="Ingresos" msprop:FriendlyName="Ingresos" msprop:DbColumnName="Ingresos" msprop:design-time-name="7946c66e-3e69-4522-97a5-d388b20ae17a" type="xs:decimal" />
+                  <xs:element name="CantidadViaje" msprop:FriendlyName="CantidadViaje" msprop:DbColumnName="CantidadViaje" msprop:design-time-name="b845d849-4810-4765-88b0-981b1b41623c" type="xs:int" />
+                  <xs:element name="CantidadPasajero" msprop:FriendlyName="CantidadPasajero" msprop:DbColumnName="CantidadPasajero" msprop:design-time-name="4e950913-299c-4e4c-80b9-13bdc0857810" type="xs:int" />
+                  <xs:element name="PromedioPasajero" msprop:FriendlyName="PromedioPasajero" msprop:DbColumnName="PromedioPasajero" msprop:design-time-name="1a42f8b0-9f92-4f24-a083-9e926bde82b4" type="xs:decimal" />
+                  <xs:element name="VentaBoleto" msprop:FriendlyName="VentaBoleto" msprop:DbColumnName="VentaBoleto" msprop:design-time-name="82b553c8-588b-4e8a-9f8d-9156b9a0b3b0" type="xs:decimal" />
+                  <xs:element name="Retrasos" msprop:FriendlyName="Retrasos" msprop:DbColumnName="Retrasos" msprop:design-time-name="8f7f15a9-56b4-43d4-8104-ccd63c06eddd" type="xs:int" />
+                  <xs:element name="MontoMantenimiento" msprop:FriendlyName="MontoMantenimiento" msprop:DbColumnName="MontoMantenimiento" msprop:design-time-name="b9d086a1-d13a-4327-8c27-837383289691" type="xs:decimal" />
+                  <xs:element name="Combustible" msprop:FriendlyName="Combustible" msprop:DbColumnName="Combustible" msprop:design-time-name="9e654f95-8c29-4966-b86b-83ef89512ba3" type="xs:decimal" />
+                  <xs:element name="Demanda" msprop:FriendlyName="Demanda" msprop:DbColumnName="Demanda" msprop:design-time-name="93527d50-51f0-41e0-98ad-b8a5c4bf9158" type="xs:decimal" />
+                  <xs:element name="Incidencias" msprop:FriendlyName="Incidencias" msprop:DbColumnName="Incidencias" msprop:design-time-name="bb62d292-3d1e-48d0-8139-364da0d655ac" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimBus" msprop:DbTableName="DimBus" msprop:FriendlyName="DimBus" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1b6cb20d-04e5-4a19-82e0-d73dc374ea7b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkBus" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="pkBus" msprop:DbColumnName="pkBus" msprop:design-time-name="aa0c945d-90be-4d8e-9892-848c4745d214" type="xs:int" />
+                  <xs:element name="idBus" msprop:FriendlyName="idBus" msprop:DbColumnName="idBus" msprop:design-time-name="c2867cf7-6aa3-44dc-a109-af5f7f6f8587" type="xs:int" />
+                  <xs:element name="Placa" msprop:FriendlyName="Placa" msprop:DbColumnName="Placa" msprop:design-time-name="86cb5778-f373-44db-9fa8-8958e31ad7cb">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Modelo" msprop:FriendlyName="Modelo" msprop:DbColumnName="Modelo" msprop:design-time-name="ca911527-b4bf-43ea-bb3a-4e2abe61b44c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Capacidad" msprop:FriendlyName="Capacidad" msprop:DbColumnName="Capacidad" msprop:design-time-name="e65bb374-6a1f-4b00-97fe-147f3747956f" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimCliente" msprop:DbTableName="DimCliente" msprop:FriendlyName="DimCliente" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d1d320ac-c8ea-4dd9-a5f6-775e5cda0c2d">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkCliente" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="pkCliente" msprop:DbColumnName="pkCliente" msprop:design-time-name="b6dd637c-333d-42de-b76c-da0b2c07f4e7" type="xs:int" />
+                  <xs:element name="idCliente" msprop:FriendlyName="idCliente" msprop:DbColumnName="idCliente" msprop:design-time-name="0615891a-c55b-4871-8716-929619e4478c" type="xs:int" />
+                  <xs:element name="Categoria" msprop:FriendlyName="Categoria" msprop:DbColumnName="Categoria" msprop:design-time-name="350e6d28-3368-4c99-88e3-3dec905648cc">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimConductor" msprop:DbTableName="DimConductor" msprop:FriendlyName="DimConductor" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9ddfcb50-af38-4fe8-b4e3-a24c608723fb">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkConductor" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="pkConductor" msprop:DbColumnName="pkConductor" msprop:design-time-name="8f732410-6a60-49a4-9bfe-9504db77a39d" type="xs:int" />
+                  <xs:element name="idConductor" msprop:FriendlyName="idConductor" msprop:DbColumnName="idConductor" msprop:design-time-name="a7c35097-7d83-4952-b594-b8f2e3a1179b" type="xs:int" />
+                  <xs:element name="Nombre" msprop:FriendlyName="Nombre" msprop:DbColumnName="Nombre" msprop:design-time-name="252a42fe-2d6a-4814-a0cf-8d3ca5344dc7">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Apellido" msprop:FriendlyName="Apellido" msprop:DbColumnName="Apellido" msprop:design-time-name="3536a5a4-f640-4357-94b0-aaaeed5d6097">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Licencia" msprop:FriendlyName="Licencia" msprop:DbColumnName="Licencia" msprop:design-time-name="1c14cab4-2838-407c-982e-3fb65f6bd910">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Incidencia" msprop:FriendlyName="Incidencia" msprop:DbColumnName="Incidencia" msprop:design-time-name="c1b1cfc7-10ee-4646-8cc4-dc01a4baf24a" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimHorario" msprop:DbTableName="DimHorario" msprop:FriendlyName="DimHorario" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7d71a081-e981-4162-9d63-0527deff2029">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkHorario" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="pkHorario" msprop:DbColumnName="pkHorario" msprop:design-time-name="72c86e7c-4364-4645-aed2-584d624d0326" type="xs:int" />
+                  <xs:element name="idHorario" msprop:FriendlyName="idHorario" msprop:DbColumnName="idHorario" msprop:design-time-name="9706007b-5ebf-4f93-85e2-3a1ed373731d" type="xs:int" />
+                  <xs:element name="HoraSalida" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:FriendlyName="HoraSalida" msprop:DbColumnName="HoraSalida" msprop:design-time-name="08d1ce42-201a-4fab-8d3c-46808ccf64a5" type="xs:anyType" />
+                  <xs:element name="HoraLlegada" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:FriendlyName="HoraLlegada" msprop:DbColumnName="HoraLlegada" msprop:design-time-name="064fcdb6-3cef-4f09-b56a-83d891d36917" type="xs:anyType" />
+                  <xs:element name="Turno" msprop:FriendlyName="Turno" msprop:DbColumnName="Turno" msprop:design-time-name="e0739530-6158-4349-a8d0-d13111684b1f">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimMantenimiento" msprop:DbTableName="DimMantenimiento" msprop:FriendlyName="DimMantenimiento" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="96216326-3479-4845-a496-8805dc287aae">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkMantenimiento" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="pkMantenimiento" msprop:DbColumnName="pkMantenimiento" msprop:design-time-name="92032baa-b414-4c58-93fd-b3c358f5f9c9" type="xs:int" />
+                  <xs:element name="idMantenimiento" msprop:FriendlyName="idMantenimiento" msprop:DbColumnName="idMantenimiento" msprop:design-time-name="7fb9b038-cf60-4da0-8dbc-4e0e4fc7090f" type="xs:int" />
+                  <xs:element name="Fecha" msprop:FriendlyName="Fecha" msprop:DbColumnName="Fecha" msprop:design-time-name="6d519cf2-bcc2-4e58-9644-eeb71e7e6f1b" type="xs:dateTime" />
+                  <xs:element name="TipoMantenimiento" msprop:FriendlyName="TipoMantenimiento" msprop:DbColumnName="TipoMantenimiento" msprop:design-time-name="74a9ab6e-5b6f-4b37-b2d5-abcf822a0989">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimRuta" msprop:DbTableName="DimRuta" msprop:FriendlyName="DimRuta" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="cc49ce27-43bb-4d7b-a012-6390dfb1cd20">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkRuta" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="pkRuta" msprop:DbColumnName="pkRuta" msprop:design-time-name="5505ec03-eecb-4adc-875c-fcd6e3f7b165" type="xs:int" />
+                  <xs:element name="idRuta" msprop:FriendlyName="idRuta" msprop:DbColumnName="idRuta" msprop:design-time-name="4f1cf089-ea37-487d-93bb-327ee9305ebe" type="xs:int" />
+                  <xs:element name="Origen" msprop:FriendlyName="Origen" msprop:DbColumnName="Origen" msprop:design-time-name="caf01913-da4e-4314-8ab0-6e209dcace8c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Destino" msprop:FriendlyName="Destino" msprop:DbColumnName="Destino" msprop:design-time-name="2f540da6-0eeb-4ec9-a7dd-2508cb629bf0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PrecioPasaje" msprop:FriendlyName="PrecioPasaje" msprop:DbColumnName="PrecioPasaje" msprop:design-time-name="133a015b-69fb-49dc-bc07-c8848e1690d4" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTerminal" msprop:DbTableName="DimTerminal" msprop:FriendlyName="DimTerminal" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="41110157-806a-48f8-8ceb-c22f4675b513">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkTerminal" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="pkTerminal" msprop:DbColumnName="pkTerminal" msprop:design-time-name="3731f995-7f3b-4445-a9a0-13dbd83cc421" type="xs:int" />
+                  <xs:element name="idTerminal" msprop:FriendlyName="idTerminal" msprop:DbColumnName="idTerminal" msprop:design-time-name="3fd74456-399e-4fe1-8dc2-2ecca64a657c" type="xs:int" />
+                  <xs:element name="Nombre" msprop:FriendlyName="Nombre" msprop:DbColumnName="Nombre" msprop:design-time-name="e07b1f95-ba51-481e-899d-73ca154a27f4">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Ciudad" msprop:FriendlyName="Ciudad" msprop:DbColumnName="Ciudad" msprop:design-time-name="6675bfd4-b8ac-4267-9908-109295c2a8f2">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTiempo" msprop:DbTableName="DimTiempo" msprop:FriendlyName="DimTiempo" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="fa44e5f4-84a6-4763-92d8-0cb73e495f56">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pkTiempo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="pkTiempo" msprop:DbColumnName="pkTiempo" msprop:design-time-name="eafa6750-cd13-407e-9e8c-47e9189b36de" type="xs:int" />
+                  <xs:element name="Anio" msprop:FriendlyName="Anio" msprop:DbColumnName="Anio" msprop:design-time-name="2201ada6-8994-459e-8bf4-8e7562e23270" type="xs:int" />
+                  <xs:element name="Mes" msprop:FriendlyName="Mes" msprop:DbColumnName="Mes" msprop:design-time-name="c8f6b3d6-e3d7-43bb-ab7c-a0d3fd659df7" type="xs:int" />
+                  <xs:element name="Semana" msprop:FriendlyName="Semana" msprop:DbColumnName="Semana" msprop:design-time-name="3d4ba629-91e5-4e85-9aed-528f276781dd" type="xs:int" />
+                  <xs:element name="Dia" msprop:FriendlyName="Dia" msprop:DbColumnName="Dia" msprop:design-time-name="01d791cd-916f-41cc-9a87-85378f7ef5a8" type="xs:int" />
+                  <xs:element name="Fecha" msprop:FriendlyName="Fecha" msprop:DbColumnName="Fecha" msprop:design-time-name="837595b5-bde0-46f0-9517-a159a8b209c1" type="xs:dateTime" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimBus" />
+          <xs:field xpath="pkBus" />
+        </xs:unique>
+        <xs:unique name="dbo_DimCliente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimCliente" />
+          <xs:field xpath="pkCliente" />
+        </xs:unique>
+        <xs:unique name="dbo_DimConductor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimConductor" />
+          <xs:field xpath="pkConductor" />
+        </xs:unique>
+        <xs:unique name="dbo_DimHorario_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimHorario" />
+          <xs:field xpath="pkHorario" />
+        </xs:unique>
+        <xs:unique name="dbo_DimMantenimiento_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimMantenimiento" />
+          <xs:field xpath="pkMantenimiento" />
+        </xs:unique>
+        <xs:unique name="dbo_DimRuta_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimRuta" />
+          <xs:field xpath="pkRuta" />
+        </xs:unique>
+        <xs:unique name="dbo_DimTerminal_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTerminal" />
+          <xs:field xpath="pkTerminal" />
+        </xs:unique>
+        <xs:unique name="dbo_DimTiempo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTiempo" />
+          <xs:field xpath="pkTiempo" />
+        </xs:unique>
+        <xs:keyref name="FK_Boleto_DimBus" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Boleto" />
+          <xs:field xpath="pkBus" />
+        </xs:keyref>
+        <xs:keyref name="FK_Boleto_DimTiempo" refer="dbo_DimTiempo_Constraint1">
+          <xs:selector xpath=".//dbo_Boleto" />
+          <xs:field xpath="pkTiempo" />
+        </xs:keyref>
+        <xs:keyref name="FK_Boleto_DimMantenimiento" refer="dbo_DimMantenimiento_Constraint1">
+          <xs:selector xpath=".//dbo_Boleto" />
+          <xs:field xpath="pkMantenimiento" />
+        </xs:keyref>
+        <xs:keyref name="FK_Boleto_DimRuta" refer="dbo_DimRuta_Constraint1">
+          <xs:selector xpath=".//dbo_Boleto" />
+          <xs:field xpath="pkRuta" />
+        </xs:keyref>
+        <xs:keyref name="FK_Boleto_DimConductor" refer="dbo_DimConductor_Constraint1">
+          <xs:selector xpath=".//dbo_Boleto" />
+          <xs:field xpath="pkConductor" />
+        </xs:keyref>
+        <xs:keyref name="FK_Boleto_DimTerminal" refer="dbo_DimTerminal_Constraint1">
+          <xs:selector xpath=".//dbo_Boleto" />
+          <xs:field xpath="pkTerminal" />
+        </xs:keyref>
+        <xs:keyref name="FK_Boleto_DimCliente" refer="dbo_DimCliente_Constraint1">
+          <xs:selector xpath=".//dbo_Boleto" />
+          <xs:field xpath="pkCliente" />
+        </xs:keyref>
+        <xs:keyref name="FK_Boleto_DimHorario" refer="dbo_DimHorario_Constraint1">
+          <xs:selector xpath=".//dbo_Boleto" />
+          <xs:field xpath="pkHorario" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <ViewDWTRANSPORTE_FBI xmlns="" />
+  </Schema>
+</DataSourceView>
