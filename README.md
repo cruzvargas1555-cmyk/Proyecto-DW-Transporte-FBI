@@ -24,7 +24,7 @@ de un Data Warehouse, un Cubo OLAP (SSAS) y Dashboards interactivos en Power BI.
 ## 🎓 Información académica
 
 - **Materia:** Inteligencia de Negocios
-- **Curso:** 'b' Vespertin -FAFI - 
+- **Curso:** 6 'B' Vespertino
 - **Metodología aplicada:** HEFESTO
 
 ## 🛠️ Tecnologías utilizadas
